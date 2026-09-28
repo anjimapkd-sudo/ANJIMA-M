@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Comic | ComicCraft</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        body {
+            background: #f5f7fb;
+        }
+
+        .comic-container {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        .page-header p {
+            color: #666;
+            font-size: 17px;
+        }
+
+        .comic-panel {
+            background: white;
+            border: 2px solid #222;
+            border-radius: 12px;
+            padding: 22px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .panel-heading {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+
+        .panel-number {
+            font-size: 15px;
+            font-weight: bold;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        .panel-heading h2 {
+            margin: 5px 0 0;
+            font-size: 26px;
+        }
+
+        .comic-image {
+            width: 100%;
+            max-width: 850px;
+            display: block;
+            margin: 0 auto 22px;
+            border: 2px solid #222;
+            border-radius: 8px;
+        }
+
+        .story-section {
+            margin-top: 15px;
+        }
+
+        .story-box {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 12px;
+            background: #fafafa;
+        }
+
+        .story-box h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        .story-box p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .scene-text {
+            font-style: italic;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+
+        .action-button {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #222;
+            background: white;
+            color: #222;
+        }
+
+        .action-button.primary {
+            background: #222;
+            color: white;
+        }
+
+        .action-button:hover {
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="comic-container">
+
+        <!-- PAGE HEADER -->
+
+        <header class="page-header">
+
+            <h1>Comic Preview</h1>
+
+            <p>
+                Review your generated comic panel by panel.
+            </p>
+
+        </header>
+
+
+        <!-- COMIC PANELS -->
+
+        {% for panel in layout %}
+
+        <article class="comic-panel">
+
+            <!-- PANEL TITLE -->
+
+            <div class="panel-heading">
+
+                <div class="panel-number">
+                    Panel {{ panel.panel_number }}
+                </div>
+
+                <h2>
+                    {{ panel.title }}
+                </h2>
+
+            </div>
+
+
+            <!-- PANEL IMAGE -->
+
+            <img
+                class="comic-image"
+                src="{{ panel.image_path }}"
+                alt="{{ panel.image_prompt }}"
+            >
+
+
+            <!-- STORY INFORMATION -->
+
+            <div class="story-section">
+
+                <!-- DESCRIPTION -->
+
+                <div class="story-box">
+
+                    <h3>
+                        Scene Description
+                    </h3>
+
+                    <p class="scene-text">
+                        {{ panel.scene_description }}
+                    </p>
+
+                </div>
+
+
+                <!-- CAPTION -->
+
+                <div class="story-box">
+
+                    <h3>
+                        Caption
+                    </h3>
+
+                    <p>
+                        {{ panel.caption }}
+                    </p>
+
+                </div>
+
+
+                <!-- NARRATION -->
+
+                <div class="story-box">
+
+                    <h3>
+                        Narration
+                    </h3>
+
+                    <p>
+                        {{ panel.narration }}
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        {% endfor %}
+
+
+        <!-- BUTTONS -->
+
+        <div class="actions">
+
+            <!-- EXPORT SUCCESS PAGE -->
+
+            <a
+                class="action-button primary"
+                href="/export-success/{{ comic_id }}"
+            >
+                Export Comic
+            </a>
+
+
+            <!-- DOWNLOAD PDF -->
+
+            <a
+                class="action-button"
+                href="/download/{{ comic_id }}"
+            >
+                Download PDF
+            </a>
+
+
+            <!-- CREATE NEW COMIC -->
+
+            <a
+                class="action-button"
+                href="/"
+            >
+                Create Another Comic
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

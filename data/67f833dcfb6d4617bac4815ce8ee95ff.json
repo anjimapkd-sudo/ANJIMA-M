@@ -1,0 +1,58 @@
+{
+  "comic_id": "67f833dcfb6d4617bac4815ce8ee95ff",
+  "request": {
+    "story_prompt": "A Brave forest explores an enchanted forest",
+    "character_name": "Finn",
+    "setting": "Enchanted forest",
+    "tone": "Dramatic",
+    "art_style": "Realistic"
+  },
+  "layout": [
+    {
+      "panel_number": 1,
+      "title": "The Beginning",
+      "scene_description": "Finn arrives in Enchanted forest.",
+      "image_prompt": "Finn in Enchanted forest, Realistic, establishing comic panel, Dramatic mood",
+      "caption": "A Dramatic moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_1_70f4d9d4_Finn_in_Enchanted_forest_Realistic_establishing_co.png"
+    },
+    {
+      "panel_number": 2,
+      "title": "A Strange Discovery",
+      "scene_description": "A mysterious clue changes the journey.",
+      "image_prompt": "Finn discovering a mysterious clue in Enchanted forest, Realistic, comic panel, Dramatic mood",
+      "caption": "A Dramatic moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_2_d8b1728e_Finn_discovering_a_mysterious_clue_in_Enchanted_fo.png"
+    },
+    {
+      "panel_number": 3,
+      "title": "The Challenge",
+      "scene_description": "The main challenge appears and the hero must act.",
+      "image_prompt": "Finn facing a challenge in Enchanted forest, Realistic, dynamic comic panel, Dramatic mood",
+      "caption": "A Dramatic moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_3_b65f18c0_Finn_facing_a_challenge_in_Enchanted_forest_Realis.png"
+    },
+    {
+      "panel_number": 4,
+      "title": "The Turning Point",
+      "scene_description": "A clever decision turns the situation around.",
+      "image_prompt": "Finn making a clever decision in Enchanted forest, Realistic, dramatic comic panel, Dramatic mood",
+      "caption": "A Dramatic moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_4_397deb90_Finn_making_a_clever_decision_in_Enchanted_forest.png"
+    },
+    {
+      "panel_number": 5,
+      "title": "A New Beginning",
+      "scene_description": "The adventure ends with a memorable new beginning.",
+      "image_prompt": "Finn celebrating a new beginning in Enchanted forest, Realistic, final comic panel, Dramatic mood",
+      "caption": "A Dramatic moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_5_42a869d4_Finn_celebrating_a_new_beginning_in_Enchanted_fore.png"
+    }
+  ],
+  "pdf_url": "/static/exports/comic_67f833dcfb6d4617bac4815ce8ee95ff_20260928_232119.pdf"
+}

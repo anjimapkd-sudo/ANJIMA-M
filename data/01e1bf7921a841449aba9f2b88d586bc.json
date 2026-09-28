@@ -1,0 +1,58 @@
+{
+  "comic_id": "01e1bf7921a841449aba9f2b88d586bc",
+  "request": {
+    "story_prompt": "A brave fox protects an enchanted forest from a mysterious danger",
+    "character_name": "Finn",
+    "setting": "Enchanted forest",
+    "tone": "Adventurous",
+    "art_style": "Comic book"
+  },
+  "layout": [
+    {
+      "panel_number": 1,
+      "title": "The Beginning",
+      "scene_description": "Finn arrives in Enchanted forest.",
+      "image_prompt": "Finn in Enchanted forest, Comic book, establishing comic panel, Adventurous mood",
+      "caption": "A Adventurous moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_1_c873f3f6_Finn_in_Enchanted_forest_Comic_book_establishing_c.png"
+    },
+    {
+      "panel_number": 2,
+      "title": "A Strange Discovery",
+      "scene_description": "A mysterious clue changes the journey.",
+      "image_prompt": "Finn discovering a mysterious clue in Enchanted forest, Comic book, comic panel, Adventurous mood",
+      "caption": "A Adventurous moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_2_c6c108b5_Finn_discovering_a_mysterious_clue_in_Enchanted_fo.png"
+    },
+    {
+      "panel_number": 3,
+      "title": "The Challenge",
+      "scene_description": "The main challenge appears and the hero must act.",
+      "image_prompt": "Finn facing a challenge in Enchanted forest, Comic book, dynamic comic panel, Adventurous mood",
+      "caption": "A Adventurous moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_3_1e4a235a_Finn_facing_a_challenge_in_Enchanted_forest_Comic.png"
+    },
+    {
+      "panel_number": 4,
+      "title": "The Turning Point",
+      "scene_description": "A clever decision turns the situation around.",
+      "image_prompt": "Finn making a clever decision in Enchanted forest, Comic book, dramatic comic panel, Adventurous mood",
+      "caption": "A Adventurous moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_4_7006de31_Finn_making_a_clever_decision_in_Enchanted_forest.png"
+    },
+    {
+      "panel_number": 5,
+      "title": "A New Beginning",
+      "scene_description": "The adventure ends with a memorable new beginning.",
+      "image_prompt": "Finn celebrating a new beginning in Enchanted forest, Comic book, final comic panel, Adventurous mood",
+      "caption": "A Adventurous moment in Enchanted forest.",
+      "narration": "Finn faces the moment with courage and curiosity.",
+      "image_path": "/static/panels/panel_5_084835d2_Finn_celebrating_a_new_beginning_in_Enchanted_fore.png"
+    }
+  ],
+  "pdf_url": "/static/exports/comic_01e1bf7921a841449aba9f2b88d586bc_20260928_092939.pdf"
+}

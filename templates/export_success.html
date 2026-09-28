@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Export Complete | ComicCraft</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: #f5f1e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .success-page {
+            width: 90%;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        .success-card {
+            background: white;
+            border: 4px solid #222;
+            border-radius: 20px;
+            padding: 45px 35px;
+            box-shadow: 8px 8px 0 #222;
+        }
+
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            background: #62c174;
+            color: white;
+
+            font-size: 48px;
+            font-weight: bold;
+
+            border: 4px solid #222;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 10px 0;
+            color: #222;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .comic-info {
+            background: #f7f7f7;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            padding: 18px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .comic-info p {
+            margin: 8px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 22px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #222;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button.secondary {
+            background: white;
+            color: #222;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <main class="success-page">
+
+        <section class="success-card">
+
+            <!-- SUCCESS ICON -->
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <!-- TITLE -->
+
+            <h1>
+                Comic Export Successful!
+            </h1>
+
+
+            <p class="subtitle">
+                Your ComicCraft comic has been successfully
+                created and the PDF is ready.
+            </p>
+
+
+            <!-- COMIC INFORMATION -->
+
+            <div class="comic-info">
+
+                <p>
+                    <strong>Status:</strong>
+                    Successfully Exported
+                </p>
+
+                <p>
+                    <strong>Format:</strong>
+                    PDF
+                </p>
+
+                <p>
+                    <strong>Comic ID:</strong>
+                    {{ comic_id }}
+                </p>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <a
+                    class="button"
+                    href="/download/{{ comic_id }}"
+                >
+                    Download PDF
+                </a>
+
+
+                <a
+                    class="button secondary"
+                    href="/"
+                >
+                    Create Another Comic
+                </a>
+
+            </div>
+
+
+            <p class="footer-text">
+                Thank you for using ComicCraft.
+            </p>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
